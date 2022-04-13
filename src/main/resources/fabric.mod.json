@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "bed_block_beyond",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Bed Block & Beyond",
+  "description": "A Minecraft mod expanding the variety of beds available.",
   "authors": [
-    "Tropheus Jay"
+    "Ignoramuses"
   ],
   "contact": {
-    "sources": "https://github.com/TropheusJ/fabric-example-mod"
+    "sources": "https://github.com/Ignoramuses/Bed-Block-Beyond"
   },
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/bed_block_beyond/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.tropheusj.modid.ExampleMod"
+      "io.github.ignoramuses.bed_block_beyond.BedBlockBeyond"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "bed_block_beyond.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
