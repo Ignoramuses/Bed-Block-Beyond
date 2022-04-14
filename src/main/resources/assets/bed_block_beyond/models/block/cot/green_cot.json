@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+  "textures" : {
+    "texture" : "minecraft:block/green_wool"
+  },
+	"elements": [
+		{
+			"from": [0, 10, 0],
+			"to": [16, 12, 16],
+			"color": 5,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2], "texture": "#texture"},
+				"east": {"uv": [0, 0, 16, 2], "texture": "#texture"},
+				"south": {"uv": [0, 0, 16, 2], "texture": "#texture"},
+				"west": {"uv": [0, 0, 16, 2], "texture": "#texture"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#texture"}
+			}
+		}
+	]
+}
