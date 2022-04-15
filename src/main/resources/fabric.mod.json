@@ -16,6 +16,10 @@
   "entrypoints": {
     "main": [
       "io.github.ignoramuses.bed_block_beyond.BedBlockBeyond"
+    ],
+
+    "preLaunch": [
+      "io.github.ignoramuses.bed_block_beyond.BedBlockBeyondPreLaunch"
     ]
   },
   "mixins": [

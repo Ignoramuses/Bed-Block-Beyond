@@ -10,6 +10,9 @@ public class AllBeds {
 			CotBlock::new
 	);
 
+	public static final BlockAndItem BED_OF_NAILS = BlockAndItem.of("bed_of_nails",
+			new NailBedBlock(FabricBlockSettings.of(Material.HEAVY_METAL)));
+
 	public static void init() {
 	}
 }

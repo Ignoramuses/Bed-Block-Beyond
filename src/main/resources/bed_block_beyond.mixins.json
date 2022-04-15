@@ -4,6 +4,7 @@
   "package": "io.github.ignoramuses.bed_block_beyond.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "LivingEntityMixin"
   ],
   "client": [
   ],
