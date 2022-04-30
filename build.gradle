@@ -55,6 +55,31 @@ dependencies {
 	annotationProcessor(include("com.github.LlamaLad7:MixinExtras:0.0.8"))
 }
 
+sourceSets {
+	main {
+		resources {
+			srcDirs += [
+					"src/main/generated"
+			]
+		}
+	}
+}
+
+loom {
+	runs {
+		datagen {
+			client()
+
+			name "Minecraft Data"
+			vmArg "-Dfabric-api.datagen"
+			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+
+			runDir "build/datagen"
+		}
+	}
+}
+assemble.dependsOn runDatagen
+
 task buildOrPublish {
 	group = "build"
 	String mavenUser = System.getenv().MAVEN_USER
@@ -105,7 +130,7 @@ publishing {
 
 	repositories {
 		maven {
-			url = "https://maven.devos.community/${System.getenv().PUBLISH_SUFFIX}/"
+			url = "https://mvn.devos.one/${System.getenv().PUBLISH_SUFFIX}/"
 			credentials {
 				username = System.getenv().MAVEN_USER
 				password = System.getenv().MAVEN_PASS

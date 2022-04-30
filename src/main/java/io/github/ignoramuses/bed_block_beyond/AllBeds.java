@@ -5,7 +5,7 @@ import net.minecraft.world.level.material.Material;
 
 public class AllBeds {
 	public static final ColoredBlockSet COT_SET = new ColoredBlockSet(
-			"cot",
+			"cot", "cot",
 			FabricBlockSettings.of(Material.WOOL),
 			CotBlock::new
 	);

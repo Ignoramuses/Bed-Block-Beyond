@@ -20,6 +20,10 @@
 
     "preLaunch": [
       "io.github.ignoramuses.bed_block_beyond.BedBlockBeyondPreLaunch"
+    ],
+
+    "fabric-datagen": [
+      "io.github.ignoramuses.bed_block_beyond.data.BedBlockBeyondData"
     ]
   },
   "mixins": [
