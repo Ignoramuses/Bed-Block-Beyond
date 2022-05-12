@@ -34,9 +34,9 @@ public abstract class LivingEntityMixin extends Entity {
 	}
 
 	@ModifyArgs(method = "setPosToBed", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/LivingEntity;setPos(DDD)V"))
-	private void bed_block_beyond$adjustBedSleepPos(Args args) {
+	private void bed_block_beyond$adjustBedSleepPos(Args args, BlockPos blockPos) {
 		Vec3 pos = new Vec3(args.get(0), args.get(1), args.get(2));
-		BlockState state = level.getBlockState(new BlockPos(pos));
+		BlockState state = level.getBlockState(blockPos);
 		if (state.getBlock() instanceof SleepPosAdjustingBed bed) {
 			Vec3 newPos = bed.adjustPos(pos);
 			if (newPos != null) {
